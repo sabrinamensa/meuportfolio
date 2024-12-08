@@ -1,0 +1,183 @@
+/* Reset de estilo básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  background-color: #fdf2f7; /* Cor de fundo suave */
+  color: #333;
+  padding: 20px;
+}
+
+/* Header e Footer */
+header,
+footer {
+  background-color: #ff69b4; /* Rosa vibrante */
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+}
+
+footer {
+  margin-top: 30px;
+}
+
+footer p {
+  font-size: 14px;
+}
+
+/* Navegação */
+nav {
+  margin-top: 60px;
+  text-align: center;
+  background-color: #ff1493; /* Rosa mais forte */
+  padding: 15px 0;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 30px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px;
+  font-size: 18px;
+  transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: #d24d7f; /* Rosa escuro para hover */
+  border-radius: 5px;
+}
+
+/* Estilo Principal */
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+h1 {
+  font-size: 38px;
+  color: #ff69b4;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 28px;
+  color: #ff1493;
+  margin-bottom: 15px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 25px;
+}
+
+/* Seção de Projetos */
+.projetos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.projeto {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projeto:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
+}
+
+.projeto h2 {
+  font-size: 22px;
+  color: #ff1493; /* Rosa para os títulos */
+  margin-bottom: 10px;
+}
+
+.projeto p {
+  color: #777;
+  font-size: 14px;
+}
+
+.projeto a {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #ff69b4; /* Rosa vibrante para links */
+  color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin-top: 15px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.projeto a:hover {
+  background-color: #d24d7f; /* Rosa escuro para hover */
+}
+
+/* Formulário de Contato */
+form {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 40px auto;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #ff1493; /* Borda rosa */
+  font-size: 16px;
+}
+
+form input[type="submit"] {
+  background-color: #ff1493; /* Rosa forte para o botão */
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+form input[type="submit"]:hover {
+  background-color: #d24d7f; /* Rosa escuro para hover */
+}
+
+/* Rodapé */
+footer {
+  font-size: 14px;
+  background-color: #ff1493;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
